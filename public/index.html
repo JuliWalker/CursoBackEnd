@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Formulario para agregar productos</h2>
+    <form action="/api/productos/" method="post">
+        Title: <input type="text" name="title" />
+        Price: <input type="number" name="price" />
+        URL: <input type="text" name="thumbnail" />
+        <button>Cargar producto</button>
+    </form>
+
+<!-- aca tendria un problema que si le paso el id como params no se como meterlo en el formulario, entiendo que el form pasa solo body -->
+
+<!--     <h2>Formulario para reemplazar producto por ID</h2>
+    <form action="/api/productos/:id" method="put">
+        New Title: <input type="text" name="title" />
+        New Price: <input type="number" name="price" />
+        New URL: <input type="text" name="thumbnail" />
+        <button>Reemplazar producto</button>
+    </form>
+
+    <h2>Formulario para eliminar producto por ID</h2>
+    <form action="/api/productos/:id" method="delete">
+        <button>Eliminar producto</button>
+    </form> -->
+
+</body>
+</html>
